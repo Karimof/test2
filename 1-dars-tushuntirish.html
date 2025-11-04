@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dars: HTML Form Elementlari</title>
+    <link rel="stylesheet" href="1-dars-tushuntirish.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lesson: HTML Form Elementlari</h1>
+        <p>Formadagi asosiy teglar va ularning vazifasi</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Form tagi</h2>
+            <p>
+                <code>&lt;form action="test.html" method="get"&gt; ... &lt;/form&gt;</code><br>
+                Bu element formaning boshlanishi va tugashini bildiradi.
+                <b>action</b> → ma’lumot qaysi faylga yuborilishini ko‘rsatadi. <br>
+                <b>method</b> → ma’lumot yuborish usuli (<i>GET</i> yoki <i>POST</i>).
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Matn kiritish</h2>
+            <form>
+                <input name="ism" type="text" placeholder="Ismingizni kiriting">
+            </form>
+            <pre><code>&lt;input name="ism" type="text"&gt;</code></pre>
+            <p>
+                type="text" → foydalanuvchi matn kiritadi.
+                <b>name</b> → serverga yuboriladigan ma’lumot nomi.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Telefon (raqam) kiritish</h2>
+            <form>
+                <input name="tel" type="number" placeholder="Telefon raqamingiz">
+            </form>
+            <pre><code>&lt;input name="tel" type="number"&gt;</code></pre>
+            <p>
+                type="number" → faqat son kiritish imkonini beradi.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Radio tugmalar</h2>
+            <form>
+                Kompyuter <input type="radio" name="qurilma">
+                Telefon <input type="radio" name="qurilma">
+            </form>
+            <pre><code>&lt;input type="radio" name="qurilma"&gt;</code></pre>
+            <p>
+                Radio tugmalar → bir xil <b>name</b> bo‘lsa, faqat bitta tanlanadi.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Checkbox tugmalar</h2>
+            <form>
+                <label><input type="checkbox"> HTML</label>
+                <label><input type="checkbox"> CSS</label>
+            </form>
+            <pre><code>&lt;input type="checkbox"&gt;</code></pre>
+            <p>
+                Checkbox → bir nechta variantni tanlash mumkin.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Sana tanlash</h2>
+            <form>
+                <input type="date">
+            </form>
+            <pre><code>&lt;input type="date"&gt;</code></pre>
+            <p>
+                type="date" → foydalanuvchi taqvimdan sana tanlaydi.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Email kiritish</h2>
+            <form>
+                <input type="email" placeholder="Email manzilingiz">
+            </form>
+            <pre><code>&lt;input type="email"&gt;</code></pre>
+            <p>
+                type="email" → email formatini tekshiradi (<i>test@example.com</i>).
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Vaqt tanlash</h2>
+            <form>
+                <input type="time">
+            </form>
+            <pre><code>&lt;input type="time"&gt;</code></pre>
+            <p>
+                type="time" → foydalanuvchi vaqt (soat:dakika) tanlaydi.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Tugmalar</h2>
+            <form>
+                <button type="submit">Ok</button>
+                <button type="reset">Clear</button>
+            </form>
+            <pre><code>
+&lt;button type="submit"&gt;Ok&lt;/button&gt;
+&lt;button type="reset"&gt;Clear&lt;/button&gt;
+      </code></pre>
+            <p>
+                <b>submit</b> → formani serverga yuboradi. <br>
+                <b>reset</b> → barcha maydonlarni tozalaydi.
+            </p>
+        </section>
+        <section>
+            <h2>10. Birgalikda yozilishi</h2>
+            <pre><code>
+            &lt;form action="test.html" method="get"&gt;
+                &lt;input name="ism" type="text"&gt;
+                &lt;input name="tel" type="number"&gt;&lt;br&gt;
+                kompyuter&lt;input type="radio" name="qurilma"&gt;
+                telefon&lt;input type="radio" name="qurilma"&gt;
+                &lt;input type="checkbox"&gt;
+                &lt;input type="checkbox"&gt;&lt;br&gt;
+                &lt;input type="date"&gt;&lt;br&gt;
+                &lt;input type="email"&gt;&lt;br&gt;
+                &lt;input type="time"&gt;&lt;br&gt;
+                &lt;button type="submit"&gt;Ok&lt;/button&gt;&lt;br&gt;
+                &lt;button type="reset"&gt;Clear&lt;/button&gt;
+            &lt;/form&gt;
+                </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML Form Darsi</p>
+    </footer>
+</body>
+
+</html>
